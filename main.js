@@ -34,9 +34,9 @@ sound.loop = true;
 function displayTime() {
   var now = new Date();
   time = now.toLocaleTimeString();
-//  clock2.textContent = `0${time}`;
-  if (Dclock.textContent > '09:58:58') {
-  Dclock.textContent = time;
+
+  if (Dclock.innerText.length >= 12) {
+  Dclock.textContent = ` ${time}`;
   }else{
   Dclock.textContent = `0${time}`;
   }
