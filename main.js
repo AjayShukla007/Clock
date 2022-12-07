@@ -35,7 +35,7 @@ function displayTime() {
   var now = new Date();
   time = now.toLocaleTimeString();
 //  clock2.textContent = `0${time}`;
-  if (Dclock.textContent.value < '10:00:00') {
+  if (Dclock.textContent.value > '010:00:00') {
   Dclock.textContent = `0${time}`;
   }else{
   Dclock.textContent = time;
