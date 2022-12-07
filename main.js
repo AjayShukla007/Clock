@@ -34,12 +34,8 @@ sound.loop = true;
 function displayTime() {
   var now = new Date();
   time = now.toLocaleTimeString();
+  Dclock.textContent = time;
 
-  if (Dclock.innerText.length >= 12) {
-  Dclock.textContent = ` ${time}`;
-  }else{
-  Dclock.textContent = `0${time}`;
-  }
   if (time === alarm) {
     sound.play();
     
