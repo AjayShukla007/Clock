@@ -1,0 +1,209 @@
+body {
+   background: linear-gradient(to right, #051BA3, #980000);
+
+   /* option with img */
+   /* background: url('/yt1 project/blur-bg1.jpg');
+   -webkit-background-size: cover;
+   background-size: cover;
+   background-repeat: no-repeat;
+    background-color: ; */
+}
+
+#clock {
+   position: relative;
+   margin: auto;
+   border: 2px dotted black;
+   border-radius: 50%;
+   background: url('clock1.png') no-repeat;
+   height: 55vw;
+   width: 55vw;
+   background-size: 100%;
+   animation: myclock 12s ease infinite;
+}
+
+@keyframes myclock {
+   0% {
+      /* border: 5px solid #030D759C; */
+      box-shadow: 20px -1px 30px darkred;
+   }
+
+   50% {
+      /* border: 5px solid #75030378; */
+      box-shadow: -20px -1px 30px darkblue;
+   }
+
+   100% {
+      /* border: 5px solid #030D759C; */
+      box-shadow: 20px -1px 30px darkred;
+   }
+}
+
+
+#hour,
+#minute,
+#second {
+   position: absolute;
+   background: black;
+   border-radius: 10px;
+   transform-origin: bottom;
+   /* transition: 1s ease; */
+}
+
+#hour {
+   width: 1.5%;
+   height: 25%;
+   top: 25%;
+   left: 49.287%;
+   opacity: 0.8;
+}
+
+#minute {
+   width: 1.5%;
+   height: 33%;
+   top: 17%;
+   left: 49.289%;
+   opacity: 0.8;
+}
+
+#second {
+   width: 0.7%;
+   height: 34%;
+   top: 16.2%;
+   left: 49.67%;
+   opacity: 0.8;
+   /* background-color: darkred; */
+}
+
+#dot {
+   background: black;
+   position: absolute;
+   border-radius: 50%;
+   top: 47%;
+   left: 47.5%;
+   width: 5%;
+   height: 5%;
+}
+
+
+
+
+.clock-wrapper {
+   line-height: 2;
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      darkblue,darkred
+    ) 1 100%;
+/*     linear-gradient(
+  to bottom, 
+  blue, 
+  rgba(0, 0, 0, 0)
+) 1 100%; */
+}
+
+/* header */
+.clock-wrapper h2 {
+   font-family: 'Orbitron', sans-serif;
+   font-size: 2em;
+   color: #fff;
+   text-align: center;
+   background: linear-gradient(to right, #0054FF, #FF0000);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+/* buttons */
+.clock-wrapper button {
+   cursor: pointer;
+   margin: 0 5px;
+   padding: 10px 30px;
+   background: transparent;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   outline: 0;
+   color: #fff;
+   transition: all ease 300ms;
+   margin: 10px 0;
+   /* text-decoration: none; */
+
+}
+
+.clock-wrapper button:active {
+   color: #333;
+   text-align: center;
+   background: linear-gradient(to right, #002164, #820000);
+   /* -webkit-background-clip: text; */
+   /* -webkit-text-fill-color: transparent; */
+}
+
+/* center content vertically and horizontally */
+.table {
+   display: table;
+   width: 100%;
+   height: 100%;
+   /* border: 2px solid black; */
+}
+.setoption{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.setoption select{
+   border-radius: 20px;
+   width: 12vw;
+   height: 6vw;
+   margin: 2px 5px 2px 5px;
+   text-align: center;
+   background: linear-gradient(to right, #0054FF, #FF0000);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.setoption option{
+   border-radius: 20px;
+   background: red;
+}
+.cell {
+   display: table-cell;
+   vertical-align: middle;
+   cursor: default;
+}
+.setopt{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.setopt button{
+   margin: 2px 4px;
+   text-align: center;
+   background: linear-gradient(to right, #0054FF, #FF0000);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+/* variable misc classes */
+.hide {
+   display: none;
+   /* margin: 1px auto; */
+}
+
+@media screen and (min-width:480px) {
+  .clock-wrapper h2{
+     font-size: 4em;
+  } 
+  .setoption select {
+     border-radius: 20px;
+     width: 5vw;
+     height: 3vw;
+     margin: 2px 5px 2px 5px;
+  }
+}
+
+#timezone{
+   text-align: center;
+   background: linear-gradient(to right, #0054FF, #FF0000);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
