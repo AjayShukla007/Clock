@@ -35,10 +35,10 @@ function displayTime() {
   var now = new Date();
   time = now.toLocaleTimeString();
 //  clock2.textContent = `0${time}`;
-  if (Dclock.textContent.value > '010:00:00') {
-  Dclock.textContent = `0${time}`;
-  }else{
+  if (Dclock.textContent > '09:58:58') {
   Dclock.textContent = time;
+  }else{
+  Dclock.textContent = `0${time}`;
   }
   if (time === alarm) {
     sound.play();
