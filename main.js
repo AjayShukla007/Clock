@@ -25,7 +25,7 @@ setInterval(()=>{
 
 var time, alarm, currentH, currentM,
     activeAlarm = false,
-    sound = new Audio("./alarmclock.wav");
+    sound = new Audio("alarm-clock-short-6402.mp3");
    //  sound = new Audio("https://freesound.org/data/previews/316/316847_4939433-lq.mp3");
 
 // loop alarm
